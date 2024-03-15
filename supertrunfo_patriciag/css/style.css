@@ -1,0 +1,91 @@
+/* zerar tudo */
+*{
+    margin: 0; /*margem zero*/
+    padding: 0;/*zero preenchimento*/
+    box-sizing: border-box; /*define a moldagem da caixa incluindo as bordas */
+}
+/* estilo corpo */
+body{
+    min-height: 100vh; /*Garante que o corpo da pagina fique visivel*/
+    background-image: url(../imagens/fundo.jpg); /*fundo do corpo com imagem*/
+    background-color: #000;/*Cor de fundo caso a iamgem nao carregue ou fique com carregamento lento*/
+    background-size: cover; /*utiliza a imagem no modo cover, cobre todo o fundo da pagina*/
+    font-family: 'Roboto', sans-serif; /*define fonte*/
+    background-position: center; /*centraliza imagem*/
+    overflow: hidden; /*Inpede a barra de rolagem horizontal*/
+}
+.logo{
+    width: 150px; /*define largura logotipo*/
+    margin-top: 20px; /*ajusta a posição do logo, para cima */
+}
+/* estilo container pricipal */
+.container{
+    text-align: center; /*Centralia o texto no conteiner*/
+    padding: 20px;/*Adiciona preenchimento automatico ao redor do container */
+}
+/* Titulo pagina */
+.page-title{
+    margin: -5px 0;/*Ajusta a margem superior e inferior do titulo pode ser negatico para pocisionamento*/
+    font-family: 'Bebas Neue', cursive; /*fonte titulo*/
+    letter-spacing: 3px;/*Adiciona espaçamento entre as letras*/
+    color: #ffff; /*Define cor do titulo*/
+}
+.button{
+    padding: 10px 20px; /**/
+    border: none;
+    border-radius: 50px;/*botao redondo*/
+    background-color: #084D6E;/*cor fundo */
+    color: #ffff; /*cor letra*/
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgb(0, 0, 0, 0.3); /*Sombra efeito 3D*/
+    transition: transform 0.3s ease box-shadow 0.3s ease; /*tranci~çoes leves*/
+}
+
+/* efeito houver botao */
+button:hover{
+    transform: translateY(-2px);/*desloca ligairamente*/
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+/* estilo carta jogador */
+#carta-jogador{
+    width: 300px;
+    height: auto;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 0 auto;
+    position: relative;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 2px solid #fff;
+}
+/* estilo caixa do jogador */
+#carta-jogador h3{
+    text-align: center;
+    color: #fff;
+}
+/* estilo imagem carta */
+#carta-jogador img{
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+/* estilos atributos carta jogador */
+.carta-atributos p{
+    background-color: #000;
+    color: #fff;
+    padding: 5px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+/* estilo rodape  */
+footer{
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
